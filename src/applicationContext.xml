@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+
+	<bean id="BaseDAO" class="dao.impl.BaseDAOImpl">
+	</bean>
+	
+	<bean id="ManagerDAO" class="dao.impl.ManagerDAOImpl">
+		<property name="BaseDAO">
+			<ref bean="BaseDAO" />
+		</property>
+	</bean>
+	<bean id="ManagerService" class="service.impl.ManagerServiceImpl">
+		<property name="ManagerDAO">
+			<ref bean="ManagerDAO" />
+		</property>
+	</bean>
+	<bean id="action.SumVIP" class="action.SumVIP">
+		<property name="ManagerService">
+			<ref bean="ManagerService" />
+		</property>
+	</bean>
+	<bean id="action.SumHealthClub" class="action.SumHealthClub">
+		<property name="ManagerService">
+			<ref bean="ManagerService" />
+		</property>
+	</bean>
+
+</beans>
