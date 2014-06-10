@@ -28,8 +28,32 @@ html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	background-size: 100% 100%;
-	background: url('../material/bg.jpg') no-repeat;
+	background: url('../material/bg-normal.jpg') no-repeat;
 	background-attachment: fixed;
+}
+
+@media screen and (max-width: 1280px) {
+	html {
+		background: url('../material/bg-normal.jpg') no-repeat;
+	}
+}
+
+@media screen and (min-width: 1281px) {
+	html {
+		background: url('../material/bg-big.jpg') no-repeat;
+	}
+}
+
+@media screen and (max-height: 768px) {
+	html {
+		background: url('../material/bg-normal.jpg') no-repeat;
+	}
+}
+
+@media screen and (min-height: 801px) {
+	html {
+		background: url('../material/bg-big.jpg') no-repeat;
+	}
 }
 
 body {
