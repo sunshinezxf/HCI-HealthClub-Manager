@@ -161,7 +161,17 @@
 	<div id="container1"
 		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 	<center><h2>
-	俱乐部女会员数量多于男会员数量
+	俱乐部女会员数量
+	<%if(gender[0].getData() > gender[1].getData()){%>
+	俱乐部女会员数量少于男会员
+	<%}
+	else if(gender[0].getData() == gender[1].getData()){%>
+	俱乐部女会员数量等于男会员
+	<%}
+	else{
+	%>
+	俱乐部女会员数量大于男会员
+	<%} %>
 	</h2>
 	</center>
 	<br>

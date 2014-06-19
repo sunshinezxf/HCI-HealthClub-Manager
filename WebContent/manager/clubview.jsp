@@ -14,8 +14,7 @@
 	href="<s:url value="/material/logo.ico"></s:url>" />
 <link rel="stylesheet" href="<s:url value="/css/bootstrap.css"></s:url>" />
 <link rel="stylesheet" href="<s:url value="/css/customize.css"></s:url>" />
-<link rel="stylesheet"
-	href="<s:url value="/css/bootstrap-theme.min.css"></s:url>" />
+
 <title>Club Statistics</title>
 <%
 	int[][] card = (int[][]) request.getAttribute("card");
@@ -209,7 +208,12 @@
 		<div id="container1"
 			style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 		<center>
-			<h2>名叫QQ的教练开课次数最多</h2>
+			<h3>
+				名叫QQ的教练开课次数为<%=coach[0]%></h3>
+			<h3>
+				名叫Baidu的教练开课次数为<%=coach[0]%></h3>
+			<h3>
+				名叫Google的教练开课次数为<%=coach[0]%></h3>
 		</center>
 		<br>
 
@@ -251,7 +255,10 @@
 		<div id="predict"
 			style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 		<center>
-			<h2>VIP数量与激活人数比约为3比2</h2>
+			<h3>
+				预估未来一个月VIP增加数量为<%=(int) predict[0] + 1%></h3>
+			<h3>
+				预估未来一个月Activity增加数量为<%=(int) predict[1] + 1%></h3>
 		</center>
 		<br>
 	</div>
