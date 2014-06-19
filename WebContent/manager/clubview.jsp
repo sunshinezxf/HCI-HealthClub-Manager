@@ -204,40 +204,56 @@
 	<script src="<s:url value="/js/highcharts.js"></s:url>"></script>
 	<script src="<s:url value="/js/modules/exporting.js"></s:url>"></script>
 	<script src="<s:url value="/js/modules/data.js"></s:url>"></script>
-	<div id="container1"
-		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
-	<div id="container2"
-		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	<div class="container">
+		<div id="container1"
+			style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		<center>
+			<h2>名叫QQ的教练开课次数最多</h2>
+		</center>
+		<br>
 
-	<table id="datatable" style="display: none;">
-		<thead>
-			<tr>
-				<th></th>
-				<th>Normal</th>
-				<th>Unnormal</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<th>Card</th>
-				<td><%=card[0][0]%></td>
-				<td><%=card[0][1]%></td>
-			</tr>
-			<tr>
-				<th>Activated</th>
-				<td><%=card[1][0]%></td>
-				<td><%=card[1][1]%></td>
-			</tr>
-			<tr>
-				<th>Payed</th>
-				<td><%=card[2][0]%></td>
-				<td><%=card[2][1]%></td>
-			</tr>
-		</tbody>
-	</table>
+		<div id="container2"
+			style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
-	<div id="predict"
-		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		<center>
+			<h2>会员卡激活付费情况，付费比例约50%</h2>
+		</center>
+		<br>
+
+		<table id="datatable" style="display: none;">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Normal</th>
+					<th>Unnormal</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Card</th>
+					<td><%=card[0][0]%></td>
+					<td><%=card[0][1]%></td>
+				</tr>
+				<tr>
+					<th>Activated</th>
+					<td><%=card[1][0]%></td>
+					<td><%=card[1][1]%></td>
+				</tr>
+				<tr>
+					<th>Payed</th>
+					<td><%=card[2][0]%></td>
+					<td><%=card[2][1]%></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div id="predict"
+			style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		<center>
+			<h2>VIP数量与激活人数比约为3比2</h2>
+		</center>
+		<br>
+	</div>
 </body>
 </html>
