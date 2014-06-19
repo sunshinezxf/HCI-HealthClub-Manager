@@ -205,18 +205,20 @@
 	<script src="<s:url value="/js/modules/data.js"></s:url>"></script>
 
 	<div class="container">
-		<div id="container1"
-			style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-		<center>
-			<h3>
-				名叫QQ的教练开课次数为<%=coach[0]%></h3>
-			<h3>
-				名叫Baidu的教练开课次数为<%=coach[0]%></h3>
-			<h3>
-				名叫Google的教练开课次数为<%=coach[0]%></h3>
-		</center>
-		<br>
-
+		<div class="container module grid-layout">
+			<div id="container1"
+				style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+			<center>
+				<h3>
+					名叫QQ的教练开课次数为<%=coach[0]%></h3>
+				<h3>
+					名叫Baidu的教练开课次数为<%=coach[0]%></h3>
+				<h3>
+					名叫Google的教练开课次数为<%=coach[0]%></h3>
+			</center>
+			<br>
+		</div>
+      <div class="container module grid-layout">
 		<div id="container2"
 			style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
@@ -224,7 +226,7 @@
 			<h2>会员卡激活付费情况，付费比例约50%</h2>
 		</center>
 		<br>
-
+      </div>
 		<table id="datatable" style="display: none;">
 			<thead>
 				<tr>
@@ -251,7 +253,7 @@
 				</tr>
 			</tbody>
 		</table>
-
+	<div class="container module grid-layout">
 		<div id="predict"
 			style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 		<center>
@@ -261,6 +263,7 @@
 				预估未来一个月Activity增加数量为<%=(int) predict[1] + 1%></h3>
 		</center>
 		<br>
+	</div>
 	</div>
 </body>
 </html>

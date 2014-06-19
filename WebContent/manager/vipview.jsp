@@ -158,6 +158,7 @@
 	<script src="<s:url value="/js/modules/exporting.js"></s:url>"></script>
 
 	<div class="container">
+	<div class="container module grid-layout">
 	<div id="container1"
 		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 	<center><h2>
@@ -175,13 +176,17 @@
 	</h2>
 	</center>
 	<br>
+	</div>
+	<div class="container module grid-layout">
 	<div id="container2"
 		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 	<center><h2>
 	国内会员数量占据半数
 	</h2>
 	</center>
-	<br>	
+	<br>
+	</div>
+	<div class="container module grid-layout">
 	<div id="container3"
 		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 	</div>
@@ -190,6 +195,7 @@
 	</h2>
 	</center>
 	<br>
+	</div>
 	
 </body>
 </html>
