@@ -157,11 +157,29 @@
 	<script src="<s:url value="/js/highcharts.js"></s:url>"></script>
 	<script src="<s:url value="/js/modules/exporting.js"></s:url>"></script>
 
+	<div class="container">
 	<div id="container1"
 		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	<center><h2>
+	俱乐部女会员数量多于男会员数量
+	</h2>
+	</center>
+	<br>
 	<div id="container2"
 		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	<center><h2>
+	国内会员数量占据半数
+	</h2>
+	</center>
+	<br>	
 	<div id="container3"
 		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	</div>
+	<center><h2>
+	20-30岁会员数量占总会员数量近90%
+	</h2>
+	</center>
+	<br>
+	
 </body>
 </html>
