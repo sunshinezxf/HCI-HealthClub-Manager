@@ -2,8 +2,8 @@ package action;
 
 import model.Manager;
 import service.ManagerService;
-import util.Encryption;
 
+@SuppressWarnings("serial")
 public class Login extends BaseAction{
 	private String username;
 	private String password;

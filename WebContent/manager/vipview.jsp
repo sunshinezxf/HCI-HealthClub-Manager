@@ -132,7 +132,11 @@
 										[ "<%=age[1].getName()%>",parseFloat(<%=age[1].getData()%>)],
 										[ "<%=age[2].getName()%>",parseFloat(<%=age[2].getData()%>) ],
 										[ "<%=age[3].getName()%>",parseFloat(<%=age[3].getData()%>) ],
-										[ "<%=age[4].getName()%>",parseFloat(<%=age[4].getData()%>) ] ]
+										[ "<%=age[4].getName()%>
+	",
+												parseFloat(
+<%=age[4].getData()%>
+	) ] ]
 							} ]
 						});
 	});
@@ -158,44 +162,51 @@
 	<script src="<s:url value="/js/modules/exporting.js"></s:url>"></script>
 
 	<div class="container">
-	<div class="container module grid-layout">
-	<div id="container1"
-		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-	<center><h2>
-	The count of female members in the club
-	<%if(gender[0].getData() > gender[1].getData()){%>
-	The number of female members is greater than the number of male members.
-	<%}
-	else if(gender[0].getData() == gender[1].getData()){%>
-	The number of female members is equal to the number of male members.
-	<%}
-	else{
-	%>
-	The number of female members is less than the number of male members.
-	<%} %>
-	</h2> 
-	</center>
-	<br>
+		<div class="container module grid-layout">
+			<div id="container1"
+				style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+			<center>
+				<h2>
+					The count of female members in the club
+					<%
+					if (gender[0].getData() > gender[1].getData()) {
+				%>
+					The number of female members is greater than the number of male
+					members.
+					<%
+					} else if (gender[0].getData() == gender[1].getData()) {
+				%>
+					The number of female members is equal to the number of male
+					members.
+					<%
+					} else {
+				%>
+					The number of female members is less than the number of male
+					members.
+					<%
+					}
+				%>
+				</h2>
+			</center>
+			<br>
+		</div>
+		<div class="container module grid-layout">
+			<div id="container2"
+				style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+			<center>
+				<h2>Half of club members are domestic.</h2>
+			</center>
+			<br>
+		</div>
+		<div class="container module grid-layout">
+			<div id="container3"
+				style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		</div>
+		<center>
+			<h2>About 90% of club members are 20-30 years old.</h2>
+		</center>
+		<br>
 	</div>
-	<div class="container module grid-layout">
-	<div id="container2"
-		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-	<center><h2>
-	Half of club members are domestic.
-	</h2>
-	</center>
-	<br>
-	</div>
-	<div class="container module grid-layout">
-	<div id="container3"
-		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-	</div>
-	<center><h2>
-	About 90% of club members are 20-30 years old.
-	</h2>
-	</center>
-	<br>
-	</div>
-	
+	<footer class="container">&copy; Health Club&#8482;,&nbsp;2014</footer>
 </body>
 </html>
