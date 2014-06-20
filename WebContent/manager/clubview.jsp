@@ -210,11 +210,11 @@
 				style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 			<center>
 				<h3>
-					名叫QQ的教练开课次数为<%=coach[0]%></h3>
+					lessons of coach QQ:<%=coach[0]%></h3>
 				<h3>
-					名叫Baidu的教练开课次数为<%=coach[0]%></h3>
+					lessons of coach Baidu:<%=coach[0]%></h3>
 				<h3>
-					名叫Google的教练开课次数为<%=coach[0]%></h3>
+					lessons of coach Google:<%=coach[0]%></h3>
 			</center>
 			<br>
 		</div>
@@ -223,7 +223,7 @@
 			style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 		<center>
-			<h2>会员卡激活付费情况，付费比例约50%</h2>
+			<h2>About 50% of VIP cards has been activated.</h2>
 		</center>
 		<br>
       </div>
@@ -258,9 +258,9 @@
 			style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 		<center>
 			<h3>
-				预估未来一个月VIP增加数量为<%=(int) predict[0] + 1%></h3>
+				The number of increasing VIP members will be<%=(int) predict[0] + 1%>in the next month.</h3>
 			<h3>
-				预估未来一个月Activity增加数量为<%=(int) predict[1] + 1%></h3>
+				The number of increasing activities will be<%=(int) predict[1] + 1%>in the next month.</h3>
 		</center>
 		<br>
 	</div>

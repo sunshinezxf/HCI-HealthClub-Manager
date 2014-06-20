@@ -162,18 +162,18 @@
 	<div id="container1"
 		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 	<center><h2>
-	俱乐部女会员数量
+	The count of female members in the club
 	<%if(gender[0].getData() > gender[1].getData()){%>
-	俱乐部女会员数量少于男会员
+	The number of female members is greater than the number of male members.
 	<%}
 	else if(gender[0].getData() == gender[1].getData()){%>
-	俱乐部女会员数量等于男会员
+	The number of female members is equal to the number of male members.
 	<%}
 	else{
 	%>
-	俱乐部女会员数量大于男会员
+	The number of female members is less than the number of male members.
 	<%} %>
-	</h2>
+	</h2> 
 	</center>
 	<br>
 	</div>
@@ -181,7 +181,7 @@
 	<div id="container2"
 		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 	<center><h2>
-	国内会员数量占据半数
+	Half of club members are domestic.
 	</h2>
 	</center>
 	<br>
@@ -191,7 +191,7 @@
 		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 	</div>
 	<center><h2>
-	20-30岁会员数量占总会员数量近90%
+	About 90% of club members are 20-30 years old.
 	</h2>
 	</center>
 	<br>
