@@ -30,5 +30,10 @@
 			<ref bean="ManagerService" />
 		</property>
 	</bean>
+	<bean id="action.Login" class="action.Login">
+		<property name="ManagerService">
+			<ref bean="ManagerService" />
+		</property>
+	</bean>
 
 </beans>

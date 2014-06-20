@@ -4,7 +4,9 @@ import model.Data;
 import model.Manager;
 
 public interface ManagerService {
-	public Manager login(String username, String password);
+   public Manager login(String username, String password);
+	
+//	public boolean login(String username, String password);
 
 	public Data[] genderSum();
 
