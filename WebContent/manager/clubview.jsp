@@ -36,7 +36,7 @@
 				text : 'HealthClub'
 			},
 			xAxis : {
-				categories : [ 'QQ', 'Baidu', 'Google' ],
+				categories : [ 'David', 'John', 'Kimi' ],
 				title : {
 					text : null
 				}
@@ -210,23 +210,23 @@
 				style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 			<center>
 				<h3>
-					lessons of coach QQ:<%=coach[0]%></h3>
+					lessons of coach David:<%=coach[0]%></h3>
 				<h3>
-					lessons of coach Baidu:<%=coach[0]%></h3>
+					lessons of coach John:<%=coach[1]%></h3>
 				<h3>
-					lessons of coach Google:<%=coach[0]%></h3>
+					lessons of coach Kimi:<%=coach[2]%></h3>
 			</center>
 			<br>
 		</div>
-      <div class="container module grid-layout">
-		<div id="container2"
-			style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		<div class="container module grid-layout">
+			<div id="container2"
+				style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
-		<center>
-			<h2>About 50% of VIP cards has been activated.</h2>
-		</center>
-		<br>
-      </div>
+			<center>
+				<h2>About 50% of VIP cards has been activated.</h2>
+			</center>
+			<br>
+		</div>
 		<table id="datatable" style="display: none;">
 			<thead>
 				<tr>
@@ -253,17 +253,21 @@
 				</tr>
 			</tbody>
 		</table>
-	<div class="container module grid-layout">
-		<div id="predict"
-			style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-		<center>
-			<h3>
-				The number of increasing VIP members will be<%=(int) predict[0] + 1%>in the next month.</h3>
-			<h3>
-				The number of increasing activities will be<%=(int) predict[1] + 1%>in the next month.</h3>
-		</center>
-		<br>
-	</div>
+		<div class="container module grid-layout">
+			<div id="predict"
+				style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+			<center>
+				<h3>
+					The number of increasing VIP members will be <%=(int) predict[0] + 1%> in
+					the next month.
+				</h3>
+				<h3>
+					The number of increasing activities will be <%=(int) predict[1] + 1%> in
+					the next month.
+				</h3>
+			</center>
+			<br>
+		</div>
 	</div>
 	<footer class="container">&copy; Health Club&#8482;,&nbsp;2014</footer>
 </body>

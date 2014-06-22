@@ -132,8 +132,7 @@
 										[ "<%=age[1].getName()%>",parseFloat(<%=age[1].getData()%>)],
 										[ "<%=age[2].getName()%>",parseFloat(<%=age[2].getData()%>) ],
 										[ "<%=age[3].getName()%>",parseFloat(<%=age[3].getData()%>) ],
-										[ "<%=age[4].getName()%>
-	",
+										[ "<%=age[4].getName()%>",
 												parseFloat(
 <%=age[4].getData()%>
 	) ] ]
@@ -167,7 +166,6 @@
 				style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 			<center>
 				<h2>
-					The count of female members in the club
 					<%
 					if (gender[0].getData() > gender[1].getData()) {
 				%>
